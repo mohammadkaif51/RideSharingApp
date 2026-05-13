@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Rides</title>
+</head>
+<body>
+
+<h2>Available Rides</h2>
+
+<ul>
+{% for ride in rides %}
+    <li>{{ ride[1] }} → {{ ride[2] }}</li>
+{% endfor %}
+</ul>
+
+<br>
+<a href="/">Back to Home</a>
+
+</body>
+</html>
